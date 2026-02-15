@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-
+import AboutImage from '../assets/profile.jpeg';
 export const About: React.FC = () => {
   return (
     <section
@@ -23,7 +23,7 @@ export const About: React.FC = () => {
         <div className="lg:col-span-1" data-aos="fade-right">
           <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden shadow-lg bg-gray-200">
             <img
-              src="/assets/profile.jpeg"
+               src={AboutImage}
               alt="Rokaya Ghallab - Frontend Developer"
               className="absolute inset-0 w-full h-full object-cover"
             />
