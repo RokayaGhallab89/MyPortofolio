@@ -24,7 +24,7 @@ export const About: React.FC = () => {
           <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden shadow-lg bg-gray-200">
             <img
               src="/assets/profile.jpeg"
-              alt="Profile"
+              alt="Rokaya Ghallab - Frontend Developer"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>

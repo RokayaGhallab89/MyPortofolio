@@ -60,7 +60,7 @@ export const Portfolio: React.FC = () => {
     { 
       id: 104, 
       title: 'CRM System 2026', 
-      category: 'crm', 
+      category: 'erp & crm', 
       image: crmSystem,
       link: 'https://crm-system-2026.netlify.app/', 
       description: 'Comprehensive CRM Solution',
@@ -154,7 +154,7 @@ export const Portfolio: React.FC = () => {
     { 
       id: 1, 
       title: 'Cannata ERP (UAE)', 
-      category: 'erp', 
+      category: 'erp & crm', 
       image: cannataErp,
       link: 'https://cannata.ae/',
       description: 'Enterprise Resource Planning',
@@ -166,7 +166,7 @@ export const Portfolio: React.FC = () => {
     ? projects 
     : projects.filter(p => p.category === filter);
 
-  const categories = ['all', 'erp', 'crm', 'dashboard', 'ecommerce', 'websites'];
+  const categories = ['all', 'erp & crm', 'dashboard', 'ecommerce', 'websites'];
 
   return (
     <section id="portfolio" className="py-16 px-6 md:px-12 lg:px-24 bg-light text-gray-800">

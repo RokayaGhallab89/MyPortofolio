@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, User, FileText, FolderOpen, Mail, Server, Linkedin, Github } from 'lucide-react';
 import { NavItem } from '../types';
+import profileImage from '../assets/profile.jpeg';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -47,10 +48,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, activeSection, onNavig
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex flex-col items-center p-6">
-         <div className="w-32 h-32 rounded-full border-8 border-gray-800 overflow-hidden mb-4 bg-gray-700">
+          <div className="w-32 h-32 rounded-full border-8 border-gray-800 overflow-hidden mb-4 bg-gray-700">
             <img
-              src="/assets/profile.jpeg"
-              alt="Profile"
+              src={profileImage}
+              alt="Rokaya Ali - Frontend Developer"
               className="w-full h-full object-cover"
             />
           </div>
@@ -96,7 +97,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, activeSection, onNavig
         </nav>
 
         <div className="mt-auto p-6 text-center text-sm text-gray-500">
-         
+          {/* يمكن إضافة محتوى هنا إذا أردت */}
         </div>
       </aside>
     </>
