@@ -21,7 +21,7 @@ export const Resume: React.FC = () => {
             <ul className="list-disc list-inside text-gray-600 space-y-1">
               <li>Maadi, Cairo, Egypt</li>
               <li>+20 103 290 7055</li>
-              <li>rokayaghallab89@gmail.com</li>
+              <li>rokayaghallab4@gmail.com</li>
             </ul>
           </div>
 

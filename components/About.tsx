@@ -66,7 +66,7 @@ export const About: React.FC = () => {
                 <ChevronRight className="text-primary" size={16} />
                 <span className="font-bold">Email:</span>
                 <span className="text-sm md:text-base">
-                  rokayaghallab89@gmail.com
+                  rokayaghallab4@gmail.com
                 </span>
               </li>
               <li className="flex items-center space-x-2">

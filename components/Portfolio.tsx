@@ -2,6 +2,22 @@ import React, { useState } from 'react';
 import { Project } from '../types';
 import { Link as LinkIcon, ExternalLink } from 'lucide-react';
 
+// استيراد الصور
+import adminDashboard from '../assets/admin-dashboard.png';
+import cashierSystem from '../assets/cashier-system.png';
+import freelanceMarketplace from '../assets/freelance-marketplace.jpg';
+import crmSystem from '../assets/crm-system.jpg';
+import luminaMarketplace from '../assets/lumina-marketplace.jpg';
+import softwarePortfolio from '../assets/software-portfolio.jpg';
+import medihubSystem from '../assets/medihub-system.jpg';
+import myPersonalSite from '../assets/my-personal-site.jpg';
+import movinz from '../assets/movinz.jpg';
+import servixAgency from '../assets/servix-agency.jpg';
+import zayamRock from '../assets/zayam-rock.jpg';
+import egyHerbal from '../assets/egy-herbal.jpg';
+import clientProject from '../assets/client-project.jpg';
+import cannataErp from '../assets/cannata-erp.jpg';
+
 export const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('all');
 
@@ -18,26 +34,25 @@ export const Portfolio: React.FC = () => {
       id: 101, 
       title: 'Admin Dashboard 2026', 
       category: 'dashboard', 
-      image: '/assets/admin-dashboard.png',
+      image: adminDashboard,
       link: 'https://admin-dashboard-2026.netlify.app/',
       description: 'Modern Analytics Dashboard',
       tech: 'React.js / Next.js'
     },
-          {
-        id: 102,
-        title: 'OmniPOS – Cashier System 2026',
-        category: 'dashboard',
-        image: '/assets/cashier-system.png',
-        link: 'https://cashier-system.netlify.app/',
-        description: 'Full-featured POS & Cashier System with sales, inventory, invoices, and reports management.',
-        tech: 'React.js / Next.js / Tailwind CSS'
-      },
-
+    {
+      id: 102,
+      title: 'OmniPOS – Cashier System 2026',
+      category: 'dashboard',
+      image: cashierSystem,
+      link: 'https://cashier-system.netlify.app/',
+      description: 'Full-featured POS & Cashier System with sales, inventory, invoices, and reports management.',
+      tech: 'React.js / Next.js / Tailwind CSS'
+    },
     { 
       id: 103, 
       title: 'Freelance Marketplace', 
       category: 'ecommerce', 
-      image: '/assets/freelance-marketplace.jpg',
+      image: freelanceMarketplace,
       link: 'https://freelance-services-marketplace.netlify.app/',
       description: 'Services Marketplace Platform',
       tech: 'React.js'
@@ -46,7 +61,7 @@ export const Portfolio: React.FC = () => {
       id: 104, 
       title: 'CRM System 2026', 
       category: 'crm', 
-      image: '/assets/crm-system.jpg',
+      image: crmSystem,
       link: 'https://crm-system-2026.netlify.app/', 
       description: 'Comprehensive CRM Solution',
       tech: 'React.js'
@@ -55,7 +70,7 @@ export const Portfolio: React.FC = () => {
       id: 105, 
       title: 'Lumina Marketplace', 
       category: 'ecommerce', 
-      image: '/assets/lumina-marketplace.jpg',
+      image: luminaMarketplace,
       link: 'https://lumina-marketplace.netlify.app/',
       description: 'Modern E-commerce Store',
       tech: 'React.js'
@@ -64,7 +79,7 @@ export const Portfolio: React.FC = () => {
       id: 106, 
       title: 'Software Portfolio', 
       category: 'websites', 
-      image: '/assets/software-portfolio.jpg',
+      image: softwarePortfolio,
       link: 'https://software-portofolio.netlify.app/',
       description: 'Tech Portfolio Template',
       tech: 'React.js'
@@ -73,7 +88,7 @@ export const Portfolio: React.FC = () => {
       id: 107, 
       title: 'MediHub System', 
       category: 'websites', 
-     image: '/assets/medihub-system.jpg',
+      image: medihubSystem,
       link: 'https://medihub-system.netlify.app/',
       description: 'Medical Management System',
       tech: 'React.js'
@@ -82,7 +97,7 @@ export const Portfolio: React.FC = () => {
       id: 108, 
       title: 'My Personal Site', 
       category: 'websites', 
-      image: '/assets/my-personal-site.jpg',
+      image: myPersonalSite,
       link: 'https://mysiterokaya.netlify.app/',
       description: 'Personal Developer Portfolio',
       tech: 'React.js'
@@ -93,7 +108,7 @@ export const Portfolio: React.FC = () => {
       id: 201, 
       title: 'Movinz', 
       category: 'websites', 
-      image: '/assets/movinz.jpg',
+      image: movinz,
       link: 'https://movinz.com/',
       description: 'Logistics Company Website',
       tech: 'WordPress'
@@ -102,7 +117,7 @@ export const Portfolio: React.FC = () => {
       id: 202, 
       title: 'Servix Agency', 
       category: 'websites', 
-      image: '/assets/servix-agency.jpg',
+      image: servixAgency,
       link: 'https://servix.agency/',
       description: 'Digital Agency Website',
       tech: 'WordPress'
@@ -111,7 +126,7 @@ export const Portfolio: React.FC = () => {
       id: 203, 
       title: 'Zayam Rock', 
       category: 'dashboard', 
-      image: '/assets/zayam-rock.jpg',
+      image: zayamRock,
       link: 'https://zayamrock.com/',
       description: 'Construction & Mining',
       tech: 'WordPress'
@@ -120,7 +135,7 @@ export const Portfolio: React.FC = () => {
       id: 204, 
       title: 'Egy Herbal', 
       category: 'ecommerce', 
-      image: '/assets/egy-herbal.jpg',
+      image: egyHerbal,
       link: 'https://egy-herbal.com/',
       description: 'Herbal Products Store',
       tech: 'WordPress / Woo'
@@ -129,7 +144,7 @@ export const Portfolio: React.FC = () => {
       id: 205, 
       title: 'Client Project (Staging)', 
       category: 'websites', 
-      image: '/assets/client-project.jpg',
+      image: clientProject,
       link: 'https://lemonchiffon-hornet-261850.hostingersite.com/',
       description: 'Educational Platform',
       tech: 'WordPress'
@@ -140,29 +155,11 @@ export const Portfolio: React.FC = () => {
       id: 1, 
       title: 'Cannata ERP (UAE)', 
       category: 'erp', 
-      image: '/assets/cannata-erp.jpg',
+      image: cannataErp,
       link: 'https://cannata.ae/',
       description: 'Enterprise Resource Planning',
       tech: 'Next.js'
-    },
-    // { 
-    //   id: 5, 
-    //   title: 'CodeSoft ERP', 
-    //   category: 'erp', 
-    //   image: '/assets/img/portfolio/codesoft-erp.jpg',
-    //   link: 'https://github.com/RokayaGhallab89/codesoft-erpApi',
-    //   description: 'Management System',
-    //   tech: 'React.js'
-    // },
-    // { 
-    //   id: 9, 
-    //   title: 'Core Brackets ERP', 
-    //   category: 'erp', 
-    //   image: '/assets/img/portfolio/core-brackets-erp.jpg',
-    //   link: 'https://github.com/RokayaGhallab89/Core-brakets-ERP',
-    //   description: 'Internal Business ERP',
-    //   tech: 'React.js'
-    // }
+    }
   ];
 
   const filteredProjects = filter === 'all' 

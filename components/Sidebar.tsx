@@ -63,7 +63,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, activeSection, onNavig
             <a href="https://www.linkedin.com/in/rokaya-ghallab-76385721b" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <Linkedin size={16} />
             </a>
-            <a href="mailto:Rokayaghallab89@gmail.com" className="p-2 bg-gray-800 rounded-full hover:bg-primary transition-colors">
+            <a href="mailto:rokayaghallab4@gmail.com" className="p-2 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <Mail size={16} />
             </a>
           </div>
