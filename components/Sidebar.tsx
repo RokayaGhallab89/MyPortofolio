@@ -47,10 +47,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, activeSection, onNavig
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex flex-col items-center p-6">
-          <div className="w-32 h-32 rounded-full border-8 border-gray-800 overflow-hidden mb-4 bg-gray-700 flex items-center justify-center">
-            {/* Using a text avatar since no real image is provided yet */}
-            <span className="text-4xl font-bold text-gray-300">RA</span>
+         <div className="w-32 h-32 rounded-full border-8 border-gray-800 overflow-hidden mb-4 bg-gray-700">
+            <img
+              src="/assets/profile.jpeg"
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
           </div>
+
           <h1 className="text-2xl font-semibold font-heading mb-2">Rokaya Ali</h1>
           <div className="flex space-x-3 mb-8">
             <a href="https://github.com/RokayaGhallab89" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-primary transition-colors">
@@ -92,7 +96,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, activeSection, onNavig
         </nav>
 
         <div className="mt-auto p-6 text-center text-sm text-gray-500">
-          <p>© 2024 <span className="text-white">Rokaya Ali</span></p>
+         
         </div>
       </aside>
     </>

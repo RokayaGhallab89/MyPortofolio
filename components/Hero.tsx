@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40"
-        style={{ backgroundImage: `url('/assets/img/hero-bg.jpg')` }}
+        style={{ backgroundImage: `url('/assets/hero-bg.png')` }}
       />
       
       {/* Overlay */}

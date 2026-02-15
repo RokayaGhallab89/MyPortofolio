@@ -18,61 +18,71 @@ export const Portfolio: React.FC = () => {
       id: 101, 
       title: 'Admin Dashboard 2026', 
       category: 'dashboard', 
-      image: '/assets/img/portfolio/admin-dashboard.jpg',
+      image: '/assets/admin-dashboard.png',
       link: 'https://admin-dashboard-2026.netlify.app/',
       description: 'Modern Analytics Dashboard',
       tech: 'React.js / Next.js'
     },
+          {
+        id: 102,
+        title: 'OmniPOS – Cashier System 2026',
+        category: 'dashboard',
+        image: '/assets/cashier-system.png',
+        link: 'https://cashier-system.netlify.app/',
+        description: 'Full-featured POS & Cashier System with sales, inventory, invoices, and reports management.',
+        tech: 'React.js / Next.js / Tailwind CSS'
+      },
+
     { 
-      id: 102, 
+      id: 103, 
       title: 'Freelance Marketplace', 
       category: 'ecommerce', 
-      image: '/assets/img/portfolio/freelance-marketplace.jpg',
+      image: '/assets/freelance-marketplace.jpg',
       link: 'https://freelance-services-marketplace.netlify.app/',
       description: 'Services Marketplace Platform',
       tech: 'React.js'
     },
     { 
-      id: 103, 
+      id: 104, 
       title: 'CRM System 2026', 
       category: 'crm', 
-      image: '/assets/img/portfolio/crm-system.jpg',
+      image: '/assets/crm-system.jpg',
       link: 'https://crm-system-2026.netlify.app/', 
       description: 'Comprehensive CRM Solution',
       tech: 'React.js'
     },
     { 
-      id: 104, 
+      id: 105, 
       title: 'Lumina Marketplace', 
       category: 'ecommerce', 
-      image: '/assets/img/portfolio/lumina-marketplace.jpg',
+      image: '/assets/lumina-marketplace.jpg',
       link: 'https://lumina-marketplace.netlify.app/',
       description: 'Modern E-commerce Store',
       tech: 'React.js'
     },
     { 
-      id: 105, 
+      id: 106, 
       title: 'Software Portfolio', 
       category: 'websites', 
-      image: '/assets/img/portfolio/software-portfolio.jpg',
+      image: '/assets/software-portfolio.jpg',
       link: 'https://software-portofolio.netlify.app/',
       description: 'Tech Portfolio Template',
       tech: 'React.js'
     },
     { 
-      id: 106, 
+      id: 107, 
       title: 'MediHub System', 
       category: 'websites', 
-      image: '/assets/img/portfolio/medihub-system.jpg',
+     image: '/assets/medihub-system.jpg',
       link: 'https://medihub-system.netlify.app/',
       description: 'Medical Management System',
       tech: 'React.js'
     },
     { 
-      id: 107, 
+      id: 108, 
       title: 'My Personal Site', 
       category: 'websites', 
-      image: '/assets/img/portfolio/my-personal-site.jpg',
+      image: '/assets/my-personal-site.jpg',
       link: 'https://mysiterokaya.netlify.app/',
       description: 'Personal Developer Portfolio',
       tech: 'React.js'
@@ -83,7 +93,7 @@ export const Portfolio: React.FC = () => {
       id: 201, 
       title: 'Movinz', 
       category: 'websites', 
-      image: '/assets/img/portfolio/movinz.jpg',
+      image: '/assets/movinz.jpg',
       link: 'https://movinz.com/',
       description: 'Logistics Company Website',
       tech: 'WordPress'
@@ -92,7 +102,7 @@ export const Portfolio: React.FC = () => {
       id: 202, 
       title: 'Servix Agency', 
       category: 'websites', 
-      image: '/assets/img/portfolio/servix-agency.jpg',
+      image: '/assets/servix-agency.jpg',
       link: 'https://servix.agency/',
       description: 'Digital Agency Website',
       tech: 'WordPress'
@@ -100,8 +110,8 @@ export const Portfolio: React.FC = () => {
     { 
       id: 203, 
       title: 'Zayam Rock', 
-      category: 'websites', 
-      image: '/assets/img/portfolio/zayam-rock.jpg',
+      category: 'dashboard', 
+      image: '/assets/zayam-rock.jpg',
       link: 'https://zayamrock.com/',
       description: 'Construction & Mining',
       tech: 'WordPress'
@@ -110,7 +120,7 @@ export const Portfolio: React.FC = () => {
       id: 204, 
       title: 'Egy Herbal', 
       category: 'ecommerce', 
-      image: '/assets/img/portfolio/egy-herbal.jpg',
+      image: '/assets/egy-herbal.jpg',
       link: 'https://egy-herbal.com/',
       description: 'Herbal Products Store',
       tech: 'WordPress / Woo'
@@ -119,7 +129,7 @@ export const Portfolio: React.FC = () => {
       id: 205, 
       title: 'Client Project (Staging)', 
       category: 'websites', 
-      image: '/assets/img/portfolio/client-project.jpg',
+      image: '/assets/client-project.jpg',
       link: 'https://lemonchiffon-hornet-261850.hostingersite.com/',
       description: 'Educational Platform',
       tech: 'WordPress'
@@ -130,29 +140,29 @@ export const Portfolio: React.FC = () => {
       id: 1, 
       title: 'Cannata ERP (UAE)', 
       category: 'erp', 
-      image: '/assets/img/portfolio/cannata-erp.jpg',
-      link: 'https://github.com/RokayaGhallab89/Cannta-Dubai',
+      image: '/assets/cannata-erp.jpg',
+      link: 'https://cannata.ae/',
       description: 'Enterprise Resource Planning',
       tech: 'Next.js'
     },
-    { 
-      id: 5, 
-      title: 'CodeSoft ERP', 
-      category: 'erp', 
-      image: '/assets/img/portfolio/codesoft-erp.jpg',
-      link: 'https://github.com/RokayaGhallab89/codesoft-erpApi',
-      description: 'Management System',
-      tech: 'React.js'
-    },
-    { 
-      id: 9, 
-      title: 'Core Brackets ERP', 
-      category: 'erp', 
-      image: '/assets/img/portfolio/core-brackets-erp.jpg',
-      link: 'https://github.com/RokayaGhallab89/Core-brakets-ERP',
-      description: 'Internal Business ERP',
-      tech: 'React.js'
-    }
+    // { 
+    //   id: 5, 
+    //   title: 'CodeSoft ERP', 
+    //   category: 'erp', 
+    //   image: '/assets/img/portfolio/codesoft-erp.jpg',
+    //   link: 'https://github.com/RokayaGhallab89/codesoft-erpApi',
+    //   description: 'Management System',
+    //   tech: 'React.js'
+    // },
+    // { 
+    //   id: 9, 
+    //   title: 'Core Brackets ERP', 
+    //   category: 'erp', 
+    //   image: '/assets/img/portfolio/core-brackets-erp.jpg',
+    //   link: 'https://github.com/RokayaGhallab89/Core-brakets-ERP',
+    //   description: 'Internal Business ERP',
+    //   tech: 'React.js'
+    // }
   ];
 
   const filteredProjects = filter === 'all' 

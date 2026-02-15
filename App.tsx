@@ -92,8 +92,8 @@ const App: React.FC = () => {
       
       {/* Footer / Scroll to top could go here */}
       <footer className="lg:ml-72 bg-light py-8 text-center text-sm text-gray-600">
-        <p>© Copyright <span className="font-bold text-gray-900">Rokaya Ali</span>. All Rights Reserved</p>
-        <p className="text-xs mt-1">Designed by <span className="text-primary">BootstrapMade</span> (Recreated in React)</p>
+       
+       
       </footer>
     </div>
   );

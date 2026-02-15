@@ -1,7 +1,32 @@
-import React from 'react';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Mail, Phone, Send } from 'lucide-react';
 
 export const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Format the message for WhatsApp
+    const phoneNumber = '201032907055';
+    const text = `*New Contact Request from Portfolio*%0a%0a*Name:* ${formData.name}%0a*Email:* ${formData.email}%0a*Subject:* ${formData.subject}%0a*Message:* ${formData.message}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+  };
+
   return (
     <section id="contact" className="py-16 px-6 md:px-12 lg:px-24 bg-light text-gray-800">
       <div className="mb-12" data-aos="fade-up">
@@ -29,7 +54,7 @@ export const Contact: React.FC = () => {
              </div>
              <div>
                <h4 className="text-xl font-bold text-secondary mb-1">Email:</h4>
-               <p className="text-sm text-gray-600">Rokayaghallab89@gmail.com</p>
+               <p className="text-sm text-gray-600">rokayaghallab89@gmail.com</p>
              </div>
           </div>
 
@@ -55,27 +80,58 @@ export const Contact: React.FC = () => {
         </div>
 
         <div className="lg:col-span-3 shadow-lg p-8 bg-white rounded-lg" data-aos="fade-left">
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col">
                 <label htmlFor="name" className="text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                <input type="text" id="name" className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" required />
+                <input 
+                  type="text" 
+                  id="name" 
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" 
+                  required 
+                />
               </div>
               <div className="flex flex-col">
                 <label htmlFor="email" className="text-sm font-medium text-gray-700 mb-1">Your Email</label>
-                <input type="email" id="email" className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" required />
+                <input 
+                  type="email" 
+                  id="email" 
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" 
+                  required 
+                />
               </div>
             </div>
             <div className="flex flex-col">
                <label htmlFor="subject" className="text-sm font-medium text-gray-700 mb-1">Subject</label>
-               <input type="text" id="subject" className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" required />
+               <input 
+                 type="text" 
+                 id="subject" 
+                 value={formData.subject}
+                 onChange={handleChange}
+                 className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" 
+                 required 
+               />
             </div>
              <div className="flex flex-col">
                <label htmlFor="message" className="text-sm font-medium text-gray-700 mb-1">Message</label>
-               <textarea id="message" rows={6} className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" required></textarea>
+               <textarea 
+                 id="message" 
+                 rows={6} 
+                 value={formData.message}
+                 onChange={handleChange}
+                 className="border border-gray-300 p-3 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" 
+                 required
+               ></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors font-semibold shadow-md">Send Message</button>
+              <button type="submit" className="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-3 rounded-full transition-colors font-semibold shadow-md flex items-center justify-center mx-auto space-x-2">
+                <span>Send Message via WhatsApp</span>
+                <Send size={18} />
+              </button>
             </div>
           </form>
         </div>
